@@ -35,4 +35,3 @@ IF ERRORLEVEL 1 (
 
 echo All tasks completed successfully.
 ENDLOCAL
-pause
