@@ -131,8 +131,10 @@ The content extraction generates JSON files with the following structure:
 ### JSON Fields
 
 - **index**: Sequential chapter/section number
-- **title**: Extracted from PDF table of contents or source structure
+- **title**: Extracted from PDF bookmarks
 - **content**: Processed and cleaned text content
+
+**!** Chapters and titles are based on the bookmarks in your PDF. You can adjust or add bookmarks in the PDF to control how chapters are split and titled in the output.
 
 ## Audiobook Generation with Kaggle Notebook
 
