@@ -1,4 +1,4 @@
-# Kokoro TTS Source
+# Kokoro TTS Audiobook
 
 A comprehensive document processing pipeline designed to convert a wide range of structured content (such as DOCX, PDF, or other formats) into JSON for Text-to-Speech (TTS) audiobook generation. While DOCX to PDF conversion is supported, it is optional—any content that can be structured into the expected JSON format can be used as input for audiobook creation.
 
