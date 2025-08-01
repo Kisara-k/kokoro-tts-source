@@ -73,10 +73,14 @@ pip install pywin32
 2. **Install Python dependencies**:
 
    ```bash
-   pip install PyMuPDF pywin32
+   pip install PyMuPDF
    ```
 
-3. **Ensure Microsoft Word is installed** on your Windows system
+3. **Ensure Microsoft Word is installed** on your Windows system, if working with Word documents
+
+   ```bash
+   pip install pywin32
+   ```
 
 ## Usage
 
@@ -88,12 +92,14 @@ Place your `.docx` files (or PDFs, or other supported content) in the root direc
 run_and_commit.bat
 ```
 
+**Note:** The `run_and_commit.bat` script will automatically commit and push changes to the remote repository. To use this workflow, you should first fork the repository on GitHub, then clone your fork locally. If you do not want to use Git or cannot push to the repository, you can simply run the scripts to generate the JSON output, then manually host or upload the JSON file (e.g., to GitHub, Google Drive) and use it in the audiobook generation step.
+
 This will:
 
 1. (Optionally) Convert all DOCX files to PDF with bookmarks
 2. Extract structured content to JSON files
 3. Commit changes to Git repository
-4. Push to remote repository
+4. Push to remote repository (if configured)
 
 ### Manual Execution
 
